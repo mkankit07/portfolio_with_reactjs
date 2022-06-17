@@ -1,0 +1,140 @@
+ .c{
+    height: 100vh;
+    position: relative;
+}
+.c-bg{
+    width: 20px;
+    height: 100%;
+    background-color: #59b252;
+    position: absolute;
+}
+.c-wrapper{
+    padding: 50px;
+    display: flex;
+}
+.c-left{
+    flex: 1;
+}
+.c-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.c-title{
+    font-size: 60px;
+    font-weight: 600;
+    width: 80%;
+}
+.c-info-item{
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+    font-weight: 300;
+    width: 70%;
+}
+
+.c-icon{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.c-des{
+    font-weight: 200;
+}
+input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+textarea{
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+button{
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: #59b252;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+@media only  screen and (max-width:600px) {
+   .c{
+    display: flex !important;
+    flex-direction: column !important;
+   }
+   .c-wrapper{
+    padding: 0px 10px 5px 30px;
+    display: flex;
+    flex-direction: column !important;
+}
+   .c-bg{
+    width: 10px;
+    height: 40%;
+    background-color: #59b252;
+    position: absolute;
+}
+    .c-right{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .c-title{
+        font-size: 30px;
+        font-weight: 600;
+        width: 80%;
+    }
+    .c-info-item{
+        display: flex;
+        align-items: center;
+        margin: 2px 0px;
+        font-weight: 300;
+        width: 100%;
+    }
+    
+    .c-icon{
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+    input{
+        width: 90%;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 10px 0px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    textarea{
+        padding: 5px;
+        width: 90%;
+        border: 1px solid black;
+        /* margin: 10px 0px; */
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    
+    button{
+        border: none;
+        padding: 15px;
+        border-radius: 3px;
+        background-color: #59b252;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+}
