@@ -5,7 +5,7 @@ const Product = (props) => {
   let [img ,setImg]=useState("")
   useEffect(()=>{
     setImg(props?.img)
-  },[])
+  },[props?.img])
   return (
     <div className='p'>
     <div className="p-bro">
@@ -14,8 +14,9 @@ const Product = (props) => {
         <div className="p-circle"></div>
     </div>
     {/* new tab Open  */}
-    <a href="/" target="_blanck" rel='noreferrer'></a>
+    <a href="/" target="_blanck" rel='noreferrer'>
         <img src={img} alt=""  className='p-img'/>
+        </a>
     </div>
   )
 }
